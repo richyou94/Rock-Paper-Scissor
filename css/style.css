@@ -24,77 +24,86 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-    html {
-        font-size: 56.25%;
-    }
+  html {
+    font-size: 56.25%;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    html {
-        font-size: 50%;
-    }
+  html {
+    font-size: 50%;
+  }
 }
 
 @media screen and (min-width: 1800px) {
-    html {
-        font-size: 75%;
-    }
+  html {
+    font-size: 75%;
+  }
 }
 
 .container {
-    border: 1px black solid;
-    max-width: 70rem;
-    margin: 0 auto;
-    height: 70vh;
+  border: 1px black solid;
+  max-width: 70rem;
+  margin: 0 auto;
+  height: 90vh;
 }
 
 .header {
-    font-size: 2rem;
+  font-size: 2.5rem;
+  position: relative;
+  text-align: left;
+  padding: 3rem 5rem;
+  height: 13%;
 }
 
 .title {
+  display: inline-block;
+  margin-right: 3rem;
+}
 
+.full-title {
+}
+
+.small-title {
+  display: none;
 }
 
 .logo {
-
+  display: inline-block;
+  width: 7rem;
+  /* position: absolute;
+  top: 50%;
+  right: 10%; */
+  transform: translate(0%, 25%);
 }
 
 .main {
-
+  height: 87%;
 }
 
 .player-box {
-    
+  height: 44%;
 }
 
 .player-name {
-
 }
 
 .hand-image {
-
 }
 
 .results {
-
+  display: inline-block;
+  height: 12%;
 }
 
 .results-text {
-
 }
 
 .result-span {
-
 }
 
 .opponent {
-
 }
 
 .user {
-    
 }
-
-
-
