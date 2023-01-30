@@ -49,7 +49,6 @@ body {
 }
 
 .header {
-  font-size: 2.5rem;
   position: relative;
   text-align: left;
   padding: 3rem 5rem;
@@ -57,6 +56,7 @@ body {
 }
 
 .title {
+  font-size: 5.5rem;
   display: inline-block;
   margin-right: 3rem;
 }
@@ -79,31 +79,97 @@ body {
 
 .main {
   height: 87%;
+  position: relative;
 }
 
 .player-box {
-  height: 44%;
+  height: 50%;
+  text-align: center;
 }
 
 .player-name {
+  text-align: center;
+  display: block;
+  font-size: 6.5rem;
+  height: 7rem;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  position: relative;
 }
-
+.hands-container {
+  display: inline;
+}
 .hand-image {
+  position: absolute;
+  width: 40rem;
+  display: inline;
+}
+.opponent-scissor {
+    left: -10%;
+}
+.opponent-paper {
+left: 22%;
+}
+.opponent-rock {
+right: -12%;
 }
 
 .results {
-  display: inline-block;
-  height: 12%;
+  position: absolute;
+  transform: translate(50%, -50%);
+  right: 50%;
+  top: 44%;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: aqua;
+  z-index: 2;
 }
 
 .results-text {
+  font-size: 6rem;
+  
+  
 }
 
 .result-span {
 }
 
 .opponent {
+  padding-top: 6rem;
+}
+.opponent-top {
+  position: absolute;
+  right: 50%;
+  top: 0%;
+  transform: translate(50%, 0%);
 }
 
 .user {
+  padding-bottom: 5rem;
+}
+.user-bottom {
+  position: absolute;
+  right: 50%;
+  bottom: 0%;
+  transform: translate(50%, 0%);
+}
+
+.user-hand {
+  position: absolute;
+}
+
+.user-rock {
+    left: -10%;
+}
+.user-paper {
+left: 22%;
+}
+.user-scissor {
+right: -12%;
+}
+
+.position-relative {
+  position: relative;
+  height: 95%;
 }
