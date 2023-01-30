@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* this defines 1rem is 10px instead of 16px; */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+.container {
+    border: 1px black solid;
+    max-width: 70rem;
+    margin: 0 auto;
+    height: 70vh;
+}
