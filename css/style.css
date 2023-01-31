@@ -15,6 +15,8 @@ body {
   box-sizing: border-box;
   padding: 5rem;
   color: #333;
+  /* background-color: #777; */
+  overflow: hidden;
 }
 
 html,
@@ -47,13 +49,15 @@ body {
   max-width: 70rem;
   margin: 0 auto;
   height: 90vh;
+  overflow: hidden;
 }
 
 .header {
   position: relative;
   text-align: left;
-  padding: 3rem 5rem;
+  padding: 2rem 5rem;
   height: 13%;
+  background-color: antiquewhite;
 }
 
 .title {
@@ -84,7 +88,7 @@ body {
 }
 
 .player-box {
-  height: 50%;
+  height: 54%;
   text-align: center;
 }
 
@@ -96,6 +100,8 @@ body {
   letter-spacing: 25px;
   text-transform: uppercase;
   position: relative;
+  background-color: beige;
+  width: 100%;
 }
 .hands-container {
   display: inline;
@@ -138,7 +144,12 @@ body {
   position: absolute;
   right: 50%;
   top: 0%;
-  transform: translate(50%, 0%);
+  transform: translate(50%, -30%);
+}
+.opponent-hand {
+  transform: translate(0%, -20%);
+  transition: transform 0.5s ease-in;
+  z-index: -1;
 }
 
 .user {
@@ -153,6 +164,9 @@ body {
 
 .user-hand {
   position: absolute;
+  z-index: -1;
+  transition: transform 0.5s ease-out;
+  transform: translate(0%, -40%);
 }
 
 .user-rock {
@@ -169,6 +183,9 @@ body {
   position: relative;
   height: 95%;
 }
+.select-conatiner {
+  position: relative;
+}
 
 .btn,
 .btn:link,
@@ -176,17 +193,13 @@ body {
   border: 1px solid black;
   display: inline-block;
   border-radius: 20px;
-  padding: 1.5rem 3rem;
   text-transform: uppercase;
-  font-size: 6rem;
-  font-weight: 600;
-  transition: all 0.5s;
   text-decoration: none;
   color: #333;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: aliceblue;
+  padding: 1.5rem 3rem;
+  font-size: 6rem;
+  font-weight: 600;
+  cursor: default;
 }
 
 .btn:after {
@@ -198,22 +211,43 @@ body {
 .btn:active:after {
   opacity: 1;
 }
-.fade-out {
-  /* animation: fadeToHide 1s; */
-visibility: hidden;
-opacity: 0;
-transition: visibility 1s, opacity 1s ease-in;
+
+.btn-start {
+  padding: 1.5rem 3rem;
+  font-size: 6rem;
+  font-weight: 600;
+  cursor: pointer;
 }
-.hide {
-    display: none;
-}
-.show {
-    /* animation: fadeToShow 1s; */
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1s ease-in;
+.btn-start:hover {
+  background-color: aliceblue !important;
 }
 
+.btn-hand {
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  transition: opacity 2s ease-in;
+  margin: 6%;
+  opacity: 0;
+}
+.fade-out {
+  /* animation: fadeToHide 1s; */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s ease-in;
+}
+.hide {
+  display: none;
+}
+.show {
+  /* animation: fadeToShow 1s; */
+  visibility: visible;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in;
+}
+
+.select-mode {
+}
 /* @keyframes fadeToHide {
   0% {
     opacity: 1;
@@ -233,4 +267,3 @@ transition: visibility 1s, opacity 1s ease-in;
     opacity: 1;
   }
 } */
-

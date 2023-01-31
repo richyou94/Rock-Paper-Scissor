@@ -23,31 +23,37 @@
       <main class="main">
         <div class="opponent player-box">
           <h2 class="player-name opponent-top">Opponent</h2>
+
           <div class="hands-container">
             <img
               src="./assets/opponent-scissor.png"
               alt="hand image"
-              class="hand-image opponent-scissor"
+              class="hand-image opponent-hand opponent-scissor"
             />
             <img
               src="./assets/opponent-paper.png"
               alt="hand image"
-              class="hand-image opponent-paper"
+              class="hand-image opponent-hand opponent-paper"
             />
             <img
               src="./assets/opponent-rock.png"
               alt="hand image"
-              class="hand-image opponent-rock"
+              class="hand-image opponent-hand opponent-rock"
             />
           </div>
         </div>
         <div class="results">
-          <a id="test" class="btn btn-start">
-            <span id="main-text" class="">start game</span>
+          <a id="main-btn" class="btn btn-start">
+            <span id="main-text" class="start-game">start game</span>
           </a>
         </div>
         <div class="user player-box">
           <div class="position-relative">
+            <div class="select-container">
+              <a class="btn btn-hand">Rock</a>
+              <a class="btn btn-hand">Paper</a>
+              <a class="btn btn-hand">Scissor</a>
+            </div>
             <div class="hands-container">
               <img
                 src="./assets/player-rock.png"
