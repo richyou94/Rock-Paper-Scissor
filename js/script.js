@@ -11,6 +11,16 @@ mainText.addEventListener("click", () => {
     }
 });
 
+btnHand[0].addEventListener("click", () => {
+    console.log('working?')
+});
+btnHand[1].addEventListener("click", () => {
+    console.log('working?')
+});
+btnHand[2].addEventListener("click", () => {
+    console.log('working?')
+});
+
 function startGame() {
   mainText.classList.add("fade-out");
   setTimeout(() => {
@@ -25,8 +35,13 @@ function startGame() {
   userHands[1].style.transform = "translate(0%, 30%)";
   userHands[2].style.transform = "translate(0%, 30%)";
 
+  
+  btnHand[0].setAttribute('style', 'pointer-events: auto');
+  btnHand[1].setAttribute('style', 'pointer-events: auto');
+  btnHand[2].setAttribute('style', 'pointer-events: auto');
+
   btnHand[0].style.opacity = "1";
   btnHand[2].style.opacity = "1";
   btnHand[1].style.opacity = "1";
-  
 }
+

@@ -229,6 +229,11 @@ body {
   transition: opacity 2s ease-in;
   margin: 6%;
   opacity: 0;
+  pointer-events: none;
+}
+.btn-hand:hover {
+  background-color: aliceblue !important;
+  cursor: pointer;
 }
 .fade-out {
   /* animation: fadeToHide 1s; */
