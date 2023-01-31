@@ -131,6 +131,12 @@ body {
   padding: 2rem 1rem;
   background-color: lightblue;
   z-index: 2;
+  min-height: 14rem;
+}
+
+.timer-countdown {
+    font-size: 8rem;
+    text-transform: uppercase;
 }
 
 .results-text {
@@ -226,7 +232,7 @@ body {
   padding: 2rem;
   font-size: 3rem;
   font-weight: 300;
-  transition: opacity 2s ease-in;
+  transition: opacity 1s ease-in;
   margin: 6%;
   opacity: 0;
   pointer-events: none;
