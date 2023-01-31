@@ -14,6 +14,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 5rem;
+  color: #333;
 }
 
 html,
@@ -105,13 +106,13 @@ body {
   display: inline;
 }
 .opponent-scissor {
-    left: -10%;
+  left: -10%;
 }
 .opponent-paper {
-left: 22%;
+  left: 22%;
 }
 .opponent-rock {
-right: -12%;
+  right: -12%;
 }
 
 .results {
@@ -124,14 +125,10 @@ right: -12%;
   padding: 2rem 1rem;
   background-color: lightblue;
   z-index: 2;
-  
 }
 
 .results-text {
   font-size: 6rem;
-}
-
-.result-span {
 }
 
 .opponent {
@@ -159,16 +156,81 @@ right: -12%;
 }
 
 .user-rock {
-    left: -10%;
+  left: -10%;
 }
 .user-paper {
-left: 22%;
+  left: 22%;
 }
 .user-scissor {
-right: -12%;
+  right: -12%;
 }
 
 .position-relative {
   position: relative;
   height: 95%;
 }
+
+.btn,
+.btn:link,
+.btn:visited {
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 600;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: aliceblue;
+}
+
+.btn:after {
+  content: "";
+  transform: translate(scale(1.5));
+  opacity: 1;
+}
+
+.btn:active:after {
+  opacity: 1;
+}
+.fade-out {
+  /* animation: fadeToHide 1s; */
+visibility: hidden;
+opacity: 0;
+transition: visibility 1s, opacity 1s ease-in;
+}
+.hide {
+    display: none;
+}
+.show {
+    /* animation: fadeToShow 1s; */
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+/* @keyframes fadeToHide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeToShow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+
