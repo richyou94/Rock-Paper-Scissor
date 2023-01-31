@@ -26,17 +26,11 @@ body {
   margin: 0px;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   html {
     font-size: 56.25%;
   }
-}
-
-@media screen and (max-width: 900px) {
-  html {
-    font-size: 50%;
-  }
-}
+} */
 
 @media screen and (min-width: 1800px) {
   html {
@@ -106,6 +100,9 @@ body {
 .hands-container {
   display: inline;
 }
+.hands-container-user {
+  height: 30rem;
+}
 .hand-image {
   position: absolute;
   width: 40rem;
@@ -135,8 +132,8 @@ body {
 }
 
 .timer-countdown {
-    font-size: 8rem;
-    text-transform: uppercase;
+  font-size: 8rem;
+  text-transform: uppercase;
 }
 
 .results-text {
@@ -278,3 +275,76 @@ body {
     opacity: 1;
   }
 } */
+
+@media screen and (max-width: 900px) {
+  body {
+    padding: 0;
+  }
+  .container {
+    height: 100vh;
+    max-width: none;
+  }
+  .header {
+    text-align: center;
+  }
+  .full-title {
+    display: none;
+  }
+  .small-title {
+    display: inline;
+  }
+  .player-name {
+    letter-spacing: 10px;
+  }
+  .hand-image {
+    width: 53%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0;
+    height: 20%;
+  }
+  .main {
+    height: 80%;
+  }
+  .small-title {
+    display: inline;
+    font-size: 3.5rem;
+  }
+  .player-name {
+    letter-spacing: 10px;
+    font-size: 3.5rem;
+    height: 4rem;
+  }
+  .btn-start {
+    font-size: 4rem;
+  }
+  .results {
+    min-height: 10rem;
+  }
+  .hand-image {
+    width: 20rem;
+  }
+  .user-hand {
+    bottom: -36%;
+  }
+  .opponent-hand {
+    top: 0%;
+  }
+  .btn-hand {
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 4%;
+  }
+  .select-container {
+    margin-top: 2rem;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+  .timer-countdown {
+    font-size: 3rem;
+  }
+}
