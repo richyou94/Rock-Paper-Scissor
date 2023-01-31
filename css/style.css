@@ -122,14 +122,13 @@ right: -12%;
   text-align: center;
   width: 100%;
   padding: 2rem 1rem;
-  background-color: aqua;
+  background-color: lightblue;
   z-index: 2;
+  
 }
 
 .results-text {
   font-size: 6rem;
-  
-  
 }
 
 .result-span {
